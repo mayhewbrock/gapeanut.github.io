@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peanut Festival 2026</title>
+  <link rel="stylesheet" href="styles.css">
+   <style>
+    .nav-links li { position: relative; }
+    .nav-links li.has-dropdown > a::after { content: " ▾"; font-size: 11px; }
+    .dropdown-menu {
+      display: none; position: absolute; top: calc(100% + 8px); left: 0;
+      background: #5c4e26; min-width: 220px; border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35); z-index: 999;
+      padding: 6px 0; list-style: none;
+    }
+    .nav-links li.has-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu li a { display: flex; align-items: center; gap: 10px; padding: 10px 18px; color: #f5ecd1; font-size: 14px; text-decoration: none; }
+    .dropdown-menu li a:hover { background: #7a6a3d; }
+    .dropdown-menu .action-link { font-weight: bold; color: #f5c842 !important; }
+    .dropdown-menu .divider { border: none; border-top: 1px solid #7a6a3d; margin: 6px 0; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="assets/logo.png" alt="Peanut Festival Logo" style="width: 6%; height: 6%;"></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li class="has-dropdown">
+        <a href="vendors.html">Vendors</a>
+        <ul class="dropdown-menu">
+          <li><a href="vendors.html">Vendor List</a></li>
+          <li><a href="vendorlinks.html">Vendor Links</a></li>
+        </ul>
+      </li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <img src="assets/year.png" style="width: 85%;height: 85%;" alt="Peanut Festival" class="hero-image">
+    <p>Celebrating peanuts and all that they do for since 1963.</p>
+    <a href="about.html" class="btn">About Us</a>
+  </section>
+
+</body>
+</html>
