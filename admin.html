@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Georgia Peanut Festival</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body class="bg-background text-foreground">
+  <div class="min-h-screen flex items-center justify-center px-4 py-12">
+    <div class="w-full max-w-3xl">
+      <div class="rounded-3xl border border-border bg-secondary p-8 shadow-xl">
+        <div class="mb-8 text-center">
+          <h1 class="text-3xl font-semibold text-foreground">Pageant Admin</h1>
+          <p class="mt-2 text-sm text-primary-foreground/80">Login to view saved applications and export them as CSV.</p>
+        </div>
+
+        <form id="admin-login-form" class="space-y-4">
+          <label class="block text-sm">
+            <span class="font-medium">Username</span>
+            <input name="username" type="text" autocomplete="username" required class="mt-2 w-full rounded-2xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+          </label>
+          <label class="block text-sm">
+            <span class="font-medium">Password</span>
+            <input name="password" type="password" autocomplete="current-password" required class="mt-2 w-full rounded-2xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+          </label>
+          <div class="flex items-center justify-between gap-4">
+            <p id="login-error" class="text-sm text-rose-500"></p>
+            <button type="submit" class="inline-flex items-center justify-center rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors">Sign In</button>
+          </div>
+        </form>
+
+        <div id="admin-panel" class="hidden mt-8 space-y-6">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p class="text-sm text-primary-foreground/80">Admin panel — saved applications are stored in browser local data.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <button id="export-csv" class="rounded-2xl bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors">Export CSV</button>
+              <button id="logout-button" class="rounded-2xl border border-border bg-background px-5 py-3 text-sm font-medium text-foreground hover:border-primary hover:text-primary transition-colors">Logout</button>
+            </div>
+          </div>
+
+          <div id="entries-container" class="space-y-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/admin-app.js"></script>
+</body>
+</html>
