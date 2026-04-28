@@ -1,0 +1,30 @@
+body { font-family: 'Fira Sans', sans-serif; background: hsl(38 33% 96%); color: hsl(25 30% 12%); }
+h1, h2, h3, h4 { font-family: 'DM Serif Display', serif; font-weight: 400; }
+/* Fade-up animation */
+.fade-up { opacity: 1; transform: translateY(0); transition: opacity .7s ease, transform .7s ease; }
+.fade-up.pending { opacity: 0; transform: translateY(24px); }
+.fade-up.is-visible { opacity: 1; transform: translateY(0); }
+/* JS-enabled: hide until observed */
+.js .fade-up:not(.is-visible) { opacity: 0; transform: translateY(24px); }
+/* Mobile menu */
+#mobile-menu { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+#mobile-menu.open { max-height: 500px; }
+.icon { width: 1em; height: 1em; display: inline-block; vertical-align: -.125em; }
+html, body { overflow-x: hidden; }
+h1 { overflow-wrap: break-word; word-wrap: break-word; }
+.learn-more-link { background: hsla(38, 33%, 96%, .2); }
+.learn-more-link:hover { background: hsla(38, 33%, 96%, .3); }
+.surface-brand-bg { background: hsla(25, 45%, 25%, .95); }
+.footer-bg { background: hsl(25 45% 25%); }
+.menu-toggle-size { width: 44px; height: 44px; }
+.hero-overlay-home { background: linear-gradient(to bottom, hsla(25, 45%, 25%, .5), hsla(25, 45%, 25%, .2), hsla(25, 45%, 25%, .7)); }
+.hero-overlay-page { background: linear-gradient(to bottom, hsla(25, 45%, 25%, .6), hsla(25, 45%, 25%, .3), hsla(25, 45%, 25%, .7)); }
+.card-overlay { background: hsla(25, 45%, 25%, .3); }
+.fs-1 { font-size: 1rem; }
+.fs-1125 { font-size: 1.125rem; }
+.fs-125 { font-size: 1.25rem; }
+.fs-15 { font-size: 1.5rem; }
+.fs-175 { font-size: 1.75rem; }
+.fs-2 { font-size: 2rem; }
+.text-warm-gold { color: hsl(40 75% 55%); }
+.map-frame { border: 0; }
