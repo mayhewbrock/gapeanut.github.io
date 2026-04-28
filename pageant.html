@@ -77,6 +77,165 @@
       </div>
       <a href="https://gapeanutfestival.org/wp-content/uploads/2025/06/2025-Peanut-Pageant-Application-final.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon "><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg> Download Application</a>
     </div>
+    <section id="pageant-application" class="bg-secondary rounded-3xl border border-border p-8 mb-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl text-foreground mb-2">2025 Peanut Pageant Application</h2>
+          <p class="text-sm text-primary-foreground/80">Submit your application directly here for admin export and CSV export.</p>
+        </div>
+        <form id="pageant-form" class="grid gap-6">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Contestant Name</span>
+              <input name="contestantName" type="text" required class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Parent / Guardian Name</span>
+              <input name="guardianName" type="text" required class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Email</span>
+              <input name="email" type="email" required class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Phone</span>
+              <input name="phone" type="tel" required class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" placeholder="(000) 000-0000" />
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Street Address</span>
+              <input name="address" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">City</span>
+              <input name="city" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">State</span>
+              <input name="state" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Zip</span>
+              <input name="zip" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Date of Birth</span>
+              <input name="dateOfBirth" type="date" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Age</span>
+              <input name="age" type="number" required min="0" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">School</span>
+              <input name="school" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Grade</span>
+              <input name="grade" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Sponsor (Optional)</span>
+              <input name="sponsor" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Hair Color</span>
+              <input name="hairColor" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Eye Color</span>
+              <input name="eyeColor" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+            </label>
+          </div>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Favorite Food</span>
+            <input name="favoriteFood" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+          </label>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Favorite Color</span>
+            <input name="favoriteColor" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+          </label>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Favorite TV Show or Movie</span>
+            <input name="favoriteShow" type="text" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none" />
+          </label>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Hobbies / Special Interests</span>
+            <textarea name="hobbies" rows="3" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none"></textarea>
+          </label>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Honors / Awards</span>
+            <textarea name="honors" rows="3" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none"></textarea>
+          </label>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Future Plans / Goals</span>
+            <textarea name="futurePlans" rows="3" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none"></textarea>
+          </label>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Your Best Quality / Why</span>
+            <textarea name="bestQuality" rows="3" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none"></textarea>
+          </label>
+
+          <label class="space-y-2 text-sm">
+            <span class="font-medium">Interesting Fact About You</span>
+            <textarea name="interestingFact" rows="3" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none"></textarea>
+          </label>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Program Ad?</span>
+              <select name="programAd" class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+              </select>
+            </label>
+            <label class="space-y-2 text-sm">
+              <span class="font-medium">Payment Method</span>
+              <select name="paymentMethod" required class="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none">
+                <option value="">Select payment method</option>
+                <option value="Cash">Cash</option>
+                <option value="Check">Check</option>
+                <option value="Venmo">Venmo</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm">
+            <input name="agreement" type="checkbox" required class="mt-1 h-4 w-4 rounded border-border bg-background text-primary focus:ring-primary" />
+            <span>I agree to follow all rules and regulations of the Georgia Peanut Festival Pageant.</span>
+          </label>
+
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <p id="application-message" class="text-sm"></p>
+            <button type="submit" class="inline-flex items-center justify-center rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Submit Application</button>
+          </div>
+        </form>
+      </div>
+    </section>
     <div class="mb-12">
       <h2 class="text-3xl text-foreground text-center mb-8">2025 Georgia Peanut Queens</h2>
       <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -160,5 +319,6 @@
 </footer>
 
 <script src="assets/js/site.js"></script>
+<script src="assets/js/pageant-app.js"></script>
 </body>
 </html>
